@@ -1,12 +1,13 @@
 import React from "react";
-import logo from "../logo.svg";
+import logo from "../../logo.svg";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
-      <a className="navbar-brand ml-5" href="#">
+      <Link className="navbar-brand ml-5" to="/">
         <img src={logo} alt="Logo" style={{ width: "35px" }} />
-      </a>
+      </Link>
       <button
         className="navbar-toggler"
         type="button"
@@ -22,20 +23,26 @@ function Navbar() {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav m-auto">
           <li className="nav-item active">
-            <a className="nav-link text-white text-uppercase ml-5" href="#">
+            <Link className="nav-link text-white text-uppercase ml-5" to="/">
               Home
-              <span className="sr-only">(current)</span>
-            </a>
+              {/* <span className="sr-only">(current)</span> */}
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-white text-uppercase ml-5" href="#">
+            <Link
+              className="nav-link text-white text-uppercase ml-5"
+              to="/news"
+            >
               News
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-white text-uppercase ml-5" href="#">
+            <Link
+              className="nav-link text-white text-uppercase ml-5"
+              to="/contact"
+            >
               Contact Us
-            </a>
+            </Link>
           </li>
         </ul>
         <form className="form-inline my-2 my-lg-0">
