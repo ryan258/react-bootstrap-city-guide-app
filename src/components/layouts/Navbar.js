@@ -1,6 +1,8 @@
 import React from "react";
 import logo from "../../logo.svg";
 import { Link } from "react-router-dom";
+import { IconContext } from "react-icons";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function Navbar() {
   return (
@@ -17,7 +19,12 @@ function Navbar() {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span className="navbar-toggler-icon"></span>
+        {/* <span className="navbar-toggler-icon"></span> */}
+        <IconContext.Provider value={{ color: "white" }}>
+          <span>
+            <GiHamburgerMenu />
+          </span>
+        </IconContext.Provider>
       </button>
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
