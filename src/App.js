@@ -9,7 +9,13 @@ class App extends Component {
     return (
       <div>
         <Navbar />
-        <h1>hello</h1>
+        <br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+        doloremque, error pariatur eveniet neque minus esse non iusto? Vitae
+        beatae perspiciatis omnis voluptatum veritatis ipsam numquam officia
+        qui. Magnam fugit ipsum ab consequuntur eveniet voluptate aliquam, dolor
+        suscipit! Voluptatibus distinctio, unde molestiae tempora animi nemo?
+        <br />
         <Footer />
       </div>
     );
