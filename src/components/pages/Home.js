@@ -7,7 +7,6 @@ class Home extends Component {
     return (
       <div className="container">
         <div className="row mt-5">
-          {/* 5.) Use the consumer to inject data and map over data with the Info component. */}
           <InfoConsumer>
             {(value) => {
               return value.info.map((item) => {

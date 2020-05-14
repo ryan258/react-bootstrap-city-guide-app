@@ -1,4 +1,3 @@
-// 5. Create a component that will consume what is being provided by the provider
 import React, { Component } from "react";
 import { InfoConsumer } from "./context";
 import { Link } from "react-router-dom";
