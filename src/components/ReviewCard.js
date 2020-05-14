@@ -3,7 +3,7 @@ import { InfoConsumer } from "./context";
 
 class ReviewCard extends Component {
   render() {
-    const { id, name, avatar, comment } = this.props.person;
+    const { name, avatar, comment } = this.props.person;
 
     return (
       <InfoConsumer>

@@ -9,7 +9,6 @@ class Details extends Component {
       <InfoConsumer>
         {(data) => {
           const {
-            id,
             headerTitle,
             headerSubTitle,
             headerText,

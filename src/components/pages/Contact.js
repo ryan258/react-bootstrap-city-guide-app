@@ -59,7 +59,10 @@ class Contact extends Component {
                   rows="4"
                   placeholder="Message"
                 ></textarea>
-                <Link className="btn btn-outline-primary text-uppercase mt-1">
+                <Link
+                  to="/"
+                  className="btn btn-outline-primary text-uppercase mt-1"
+                >
                   <i className="fa fa-paper-plane" aria-hidden="true"></i>
                   {/* <i className="fab fa-telegram-plane" aria-hidden="true"></i> */}
                   &nbsp;Send

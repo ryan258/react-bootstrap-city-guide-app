@@ -14,7 +14,9 @@ class NewsCard extends Component {
                 {newsTitle}
               </h5>
               <p className="card-text">{newsText}</p>
-              <Link className="card-link">Read More >></Link>
+              <Link to="/" className="card-link">
+                Read More >>
+              </Link>
             </div>
           </div>
         )}
