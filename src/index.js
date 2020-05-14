@@ -1,14 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
+// With this we provide the data to all the descendant components
+import { InfoProvider } from "./components/context";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
+    <InfoProvider>
+      <Router>
+        <App />
+      </Router>
+    </InfoProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
