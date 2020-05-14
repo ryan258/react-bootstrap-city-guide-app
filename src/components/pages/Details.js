@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { InfoConsumer } from "../context";
 import styled from "styled-components";
+import Reviews from "../Reviews";
 
 class Details extends Component {
   render() {
@@ -101,7 +102,7 @@ class Details extends Component {
                   </div>
                   {/* Reviews */}
                   <div id="reviews" className="tab-pane" role="tabpanel">
-                    Reviews Content
+                    <Reviews />
                   </div>
                   {/* Map */}
                   <div id="map" className="tab-pane" role="tabpanel">
